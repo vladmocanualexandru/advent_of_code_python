@@ -1,5 +1,8 @@
 from numpy import mat
 
+def getDimensions(matrix):
+    return (len(matrix), len(matrix[0]))
+
 def log(matrix, logFunc, separator='', highlightElem=(lambda e: str(e))):
     for line in matrix:
         logFunc(separator.join([highlightElem(e) for e in line]))
