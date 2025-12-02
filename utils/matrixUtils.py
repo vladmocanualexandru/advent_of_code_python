@@ -1,5 +1,3 @@
-from numpy import mat
-
 def getDimensions(matrix):
     return (len(matrix), len(matrix[0]))
 
