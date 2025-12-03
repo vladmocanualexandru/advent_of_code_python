@@ -6,11 +6,12 @@ import time
 
 import utils as utils
 
-startMs = 0
+# startMs = 0
 
 def log(*output):
-    msDiff = round(time.time()*1000 - startMs)
-    print('%s %s' % (utils.terminalUtils.dark(utils.labelMakerUtils.formatElapsedMsConsole(msDiff)), ' '.join(str(e) for e in output)))
+    # msDiff = round(time.time()*1000 - startMs)
+    # print('%s %s' % (utils.terminalUtils.dark(utils.labelMakerUtils.formatElapsedMsConsole(msDiff)), ' '.join(str(e) for e in output)))
+    print(' '.join(str(e) for e in output))
 
 def logMatrix(matrix, logFunc=log, separator='', highlightElem=(lambda e: str(e))):
     return utils.matrixUtils.log(matrix, logFunc, separator, highlightElem)
