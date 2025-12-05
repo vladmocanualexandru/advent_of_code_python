@@ -9,3 +9,4 @@ test.data
 .DS_Store
 launch.py
 poetry.lock
+.ipynb_checkpoints/
