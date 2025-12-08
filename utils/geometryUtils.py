@@ -51,3 +51,10 @@ def getManhattanDistance(a,b):
 
 def getManhattanDistance(x1,y1,x2,y2):
     return abs(x1-x2)+abs(y1-y2)
+
+def get3DDistance(x1,y1,z1=None,x2=None,y2=None,z2=None):
+    if z1 == None:
+        [x2,y2,z2] = y1
+        [x1,y1,z1] = x1
+
+    return math.sqrt(math.pow(x1-x2,2)+math.pow(y1-y2,2)+math.pow(z1-z2,2))
