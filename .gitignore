@@ -5,6 +5,8 @@ venv
 .venv
 input.txt
 example.data
+example_part_1.data
+example_part_2.data
 test.data
 .DS_Store
 launch.py
